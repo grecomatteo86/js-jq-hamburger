@@ -94,7 +94,7 @@ close.click(
 */
 
 
-5.
+// 5.
 
 headerRight.mouseover(
 
@@ -105,3 +105,15 @@ headerRight.mouseover(
   }
 
 );
+
+
+
+
+// headerRight.click(
+//
+//   function(){
+//     headerRight.addClass( "hamburger-menu" );
+//
+//   }
+//
+// );
