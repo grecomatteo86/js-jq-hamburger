@@ -47,6 +47,7 @@ barsMenu.click(
 
 // 3. il menu compare e scompare automaticamente ad un solo click, con toggle
 
+/*
 barsMenu.click(
 
   function(){
@@ -64,3 +65,34 @@ barsMenu.click(
   }
 
 );
+*/
+
+
+// 4. il menu compare al mio click con toggle e scompare al mio click con fadeOut
+
+barsMenu.click(
+
+  function(){
+
+    hambLinks.toggle('slow');
+
+  }
+
+);
+
+close.click(
+
+  function(){
+
+    hambLinks.fadeOut('slow');
+
+  }
+
+);
+
+
+// function(){
+//
+//   hambLinks.fadeOut('slow');
+//
+// }
