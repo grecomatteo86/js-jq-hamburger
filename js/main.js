@@ -5,7 +5,7 @@ var close = $('.close');
 barsMenu.click(
 
   function () {
-    hambLinks.show('slow');
+    hambLinks.fadeIn('slow');
   }
 
 );
@@ -13,7 +13,7 @@ barsMenu.click(
 close.click(
 
   function(){
-    hambLinks.hide('slow');
+    hambLinks.fadeOut('fast');
   }
 
 );
