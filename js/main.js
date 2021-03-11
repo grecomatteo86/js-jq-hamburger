@@ -1,6 +1,7 @@
 var barsMenu = $('a > .fa-bars');
 var hambLinks = $('.hamburger-menu');
 var close = $('.close');
+var headerRight = $('.header-right');
 
 // 1. il menu compare al mio click e scompare al mio click
 
@@ -70,6 +71,7 @@ barsMenu.click(
 
 // 4. il menu compare al mio click con toggle e scompare al mio click con fadeOut
 
+/*
 barsMenu.click(
 
   function(){
@@ -89,10 +91,17 @@ close.click(
   }
 
 );
+*/
 
 
-// function(){
-//
-//   hambLinks.fadeOut('slow');
-//
-// }
+5.
+
+headerRight.mouseover(
+
+  function(){
+
+    hambLinks.show('fast');
+
+  }
+
+);
