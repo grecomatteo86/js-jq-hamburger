@@ -5,15 +5,24 @@ var close = $('.close');
 barsMenu.click(
 
   function () {
-    hambLinks.fadeIn('slow');
+
+    hambLinks.fadeIn('slow',
+
+      function(){
+
+        hambLinks.fadeOut('slow')
+
+      }
+
+    );
   }
 
 );
 
-close.click(
-
-  function(){
-    hambLinks.fadeOut('fast');
-  }
-
-);
+// close.click(
+//
+//   function(){
+//     hambLinks.fadeOut('fast');
+//   }
+//
+// );
