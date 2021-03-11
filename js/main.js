@@ -95,7 +95,7 @@ close.click(
 
 
 // 5. il menu compare quando entro col mouse in barsMenu e scompare quando esco col muose da close
-
+/*
 barsMenu.mouseenter(
 
   function(){
@@ -112,6 +112,33 @@ close.mouseleave(
   function(){
 
     hambLinks.hide('fast');
+
+  }
+
+);
+*/
+
+
+
+// 5. il menu compare al click su barsMenu e scompare al click su close, usando addClass e removeClass
+
+barsMenu.click(
+
+  function(){
+
+    hambLinks.addClass('active');
+
+  }
+
+);
+
+
+
+close.click(
+
+  function(){
+
+    hambLinks.removeClass('active');
 
   }
 
