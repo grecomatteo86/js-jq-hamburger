@@ -94,9 +94,9 @@ close.click(
 */
 
 
-// 5.
+// 5. il menu compare quando entro col mouse in barsMenu e scompare quando esco col muose da close
 
-headerRight.mouseover(
+barsMenu.mouseenter(
 
   function(){
 
@@ -107,13 +107,12 @@ headerRight.mouseover(
 );
 
 
+close.mouseleave(
 
+  function(){
 
-// headerRight.click(
-//
-//   function(){
-//     headerRight.addClass( "hamburger-menu" );
-//
-//   }
-//
-// );
+    hambLinks.hide('fast');
+
+  }
+
+);
