@@ -1,145 +1,77 @@
-var barsMenu = $('a > .fa-bars');
-var hambLinks = $('.hamburger-menu');
+var hamburgerMenu = $('a > .fa-bars');
+var hambunrgerLinks = $('.hamburger_links');
 var close = $('.close');
-var headerRight = $('.header-right');
-
-// 1. il menu compare al mio click e scompare al mio click
-
-/*
-barsMenu.click(
-
+/*1.
+hamburgerMenu.click(
   function () {
-    hambLinks.fadeIn('slow');
+    hambunrgerLinks.fadeIn('slow');
   }
-
 );
-
 close.click(
-
   function(){
-    hambLinks.fadeOut('fast');
+    hambunrgerLinks.fadeOut('fast');
   }
-
 );
-*/
-
-
-// 2. il menu compare e scompare automaticamente ad un solo click, con effetto fadeIn fadeOut
-
 /*
-barsMenu.click(
-
+//--------------------------------------
+// 2.
+hamburgerMenu.click(
   function () {
-
-    hambLinks.fadeIn('slow',
-
+    hambunrgerLinks.fadeIn('slow',
       function(){
-
-        hambLinks.fadeOut('slow')
-
+        hambunrgerLinks.fadeOut('slow')
       }
-
     );
   }
-
 );
-*/
-
-
-// 3. il menu compare e scompare automaticamente ad un solo click, con toggle
-
 /*
-barsMenu.click(
-
+//---------------------------------------
+// 3.
+hamburgerMenu.click(
   function(){
-
-    hambLinks.toggle('slow',
-
+    hambunrgerLinks.toggle('slow',
       function(){
-
-        hambLinks.toggle('slow');
-
+        hambunrgerLinks.toggle('slow');
       }
-
     );
-
   }
-
 );
-*/
-
-
-// 4. il menu compare al mio click con toggle e scompare al mio click con fadeOut
-
 /*
-barsMenu.click(
-
+//----------------------------------
+// 4.
+hamburgerMenu.click(
   function(){
-
-    hambLinks.toggle('slow');
-
+    hambunrgerLinks.toggle('slow');
   }
-
 );
-
 close.click(
-
   function(){
-
-    hambLinks.fadeOut('slow');
-
+    hambunrgerLinks.fadeOut('slow');
   }
-
 );
-*/
-
-
-// 5. il menu compare quando entro col mouse in barsMenu e scompare quando esco col muose da close
 /*
-barsMenu.mouseenter(
-
+//--------------------------------
+// 5.
+hamburgerMenu.mouseenter(
   function(){
-
-    hambLinks.show('fast');
-
+    hambunrgerLinks.show('fast');
   }
-
 );
-
-
 close.mouseleave(
-
   function(){
-
-    hambLinks.hide('fast');
-
+    hambunrgerLinks.hide('fast');
   }
-
-);
-*/
-
-
-
-// 5. il menu compare al click su barsMenu e scompare al click su close, usando addClass e removeClass
-
-barsMenu.click(
-
-  function(){
-
-    hambLinks.addClass('active');
-
-  }
-
 );
 
-
-
+//-----------------------------------------
+// 6.*/
+hamburgerMenu.click(
+  function(){
+    hambunrgerLinks.addClass('active');
+  }
+);
 close.click(
-
   function(){
-
-    hambLinks.removeClass('active');
-
+    hambunrgerLinks.removeClass('active');
   }
-
 );

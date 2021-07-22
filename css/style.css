@@ -11,45 +11,45 @@ header {
     background: white;
     border-bottom: 1px solid #efefef;
 }
-.header-left, .header-right {
+.logo_container, .header_links {
     float: left;
     height: 100%;
 }
-.header-left {
+.logo_container {
     width: 20%;
 }
-.header-right {
+.header_links {
     width: 80%;
 }
-.header-left img {
+.logo_container img {
     height: 40px;
     margin-top: 15px;
 }
-.header-right > a {
+.header_links > a {
     display: none;
 }
-.header-right ul {
+.header_links ul {
     list-style: none;
     height: 100%;
     text-align: right;
 }
-.header-right ul li {
+.header_links ul li {
     display: inline-block;
     margin: 0 20px;
     line-height: 70px;
     height: 100%;
 }
-.header-right ul li a {
+.header_links ul li a {
     color: #565A5C;
     text-decoration: none;
 }
-.header-right ul li a.cta {
+.header_links ul li a.cta {
     padding: 10px 20px;
     color: white;
     background: #E78D5C;
 }
 
-.hamburger-menu {
+.hamburger_links {
     position: absolute;
     top: 0;
     left: 0;
@@ -61,7 +61,7 @@ header {
     min-height: 100vh;
     background: #2B3F58;
 }
-.hamburger-menu ul {
+.hamburger_links ul {
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -69,7 +69,7 @@ header {
     align-items: flex-start;
     list-style: none;
 }
-.hamburger-menu ul li a {
+.hamburger_links ul li a {
     color: white;
     text-decoration: none;
     font-size: 25px;
@@ -86,10 +86,10 @@ header {
 }
 @media screen and (max-width: 1000px)
 {
-    .header-right ul {
+    .header_links ul {
         display: none;
     }
-    .header-right > a {
+    .header_links > a {
         display: block;
         height: 100%;
         line-height: 70px;
@@ -97,8 +97,7 @@ header {
         color: lightgrey;
         font-size: 20px;
     }
-
-    .hamburger-menu.active {
+    .hamburger_links.active {
         display: block;
     }
 }
